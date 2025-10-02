@@ -1,6 +1,6 @@
 export const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen bg-[url('/bg-hero.jpg')] bg-cover bg-center">
+    <section className="relative h-screen pt-30 bg-[url('/bg-hero.jpg')] bg-cover bg-center">
       {/* Overlay dinámico */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/50 to-black/30 z-0" />
 

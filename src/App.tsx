@@ -4,7 +4,7 @@ import "./App.css";
 import '@fontsource/inter/400.css';
 import '@fontsource/poppins/400.css';
 
-import { Header } from "./sections/Header";
+import { Header } from "./components/layout/header/Header";
 import { Footer } from "./sections/Footer";
 
 import { Home } from "./pages/Home";
@@ -12,14 +12,14 @@ import { QuienesSomos } from "./pages/QuienesSomos";
 import { Consejo } from "./pages/Consejo";
 import { MisionVision } from "./pages/MisionVision";
 
-import { ScrollToTop } from "./components/ScrollToTop"; // ajusta la ruta según tu proyecto
+import { ScrollToTop } from "./components/common/ScrollToTop"; 
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Header />
 
-      <ScrollToTop /> {/* <--- se asegura que cada ruta comience desde arriba */}
+      <ScrollToTop /> 
 
       <main className="min-h-[70vh]">
         <Routes>

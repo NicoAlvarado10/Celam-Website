@@ -9,8 +9,11 @@ body, p {
   font-family: 'Inter', sans-serif;
 }
 
-h1, h2, h3, span {
+h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.btn-attention {
+  @apply bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition;
 }
