@@ -9,42 +9,48 @@ export const TopBar = ({ onMenuToggle }: { onMenuToggle: () => void }) => {
   return (
     <>
       <div className="backdrop-blur-md shadow-sm border-b p-4 z-50 relative">
-        <div className="max-w-10/12 mx-auto max-md:max-w-11/12 flex justify-between items-center">
+        <div className="max-w-10/12 mx-auto max-md:max-w-11/12 flex justify-between gap-6 items-center">
          <a href="/" className="flex w-full items-center">
   <img
     src="./logo.png"
     alt="Logo CELAM"
     className="w-[140px] max-md:w-[120px] h-auto object-contain"
   />
-</a>
+        </a>
+
+ <div className="hidden lg:flex w-7/12  justify-center ">
+      <div className="relative w-full max-w-md bg-white border rounded-2xl px-4 py-2 shadow-sm">
+        <i className="ri-search-line absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg" />
+        <input
+          type="text"
+          placeholder="¿Qué estás buscando?"
+          className="w-full bg-transparent pl-8 pr-2 text-sm text-gray-700 placeholder-gray-500 focus:outline-none"
+        />
+      </div>
+    </div>
 
           <div className="hidden lg:flex items-center gap-6 w-full justify-end">
-            <input
-              type="text"
-              placeholder="¿Qué estás buscando?"
-              className="border rounded px-3 py-1 w-64 mx-auto "
-              
-            />
+           
            <button
   onClick={() => setPopupType("guardia")}
   className="btn-attention tracking-wide cursor-pointer flex items-center gap-2 text-sm uppercase"
 >
   <i className="ri-customer-service-line text-2xl" /> Atención Guardia
-</button>
+            </button>
 
-<button
+            <button
   onClick={() => setPopupType("gerencia")}
   className="btn-attention text-sm tracking-wide cursor-pointer flex items-center gap-2 uppercase"
 >
   <i className="ri-briefcase-line text-2xl" /> Atención Gerencia
-</button>
+            </button>
 
-<button
+            <button
   onClick={() => setPopupType("serviciosSociales")}
   className="btn-attention cursor-pointer text-sm tracking-wide flex items-center gap-2 uppercase"
 >
   <i className="ri-hand-heart-line text-2xl" /> Servicios Sociales
-</button>
+            </button>
           </div>
 
           <div className="flex lg:hidden items-center gap-4 text-2xl text-white">
