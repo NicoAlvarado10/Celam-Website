@@ -5,7 +5,7 @@ import '@fontsource/inter/400.css';
 import '@fontsource/poppins/400.css';
 
 import { Header } from "./components/layout/header/Header";
-import { Footer } from "./sections/Footer";
+import { Footer } from "./components/layout/footer/Footer";
 
 import { Home } from "./pages/Home";
 import { QuienesSomos } from "./pages/QuienesSomos";
