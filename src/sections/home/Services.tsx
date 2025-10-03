@@ -38,7 +38,7 @@ export const Services: React.FC = () => {
     <section className="bg-gray-50 text-gray-900 py-20 " id="services">
       <div className="max-w-10/12 max-sm:max-w-11/12 mx-auto">
         <header className="text-center mb-12">
-          <h2 className="text-5xl max-sm:text-3xl font-bold">Nuestros Servicios</h2>
+          <h2 className="text-4xl max-sm:text-3xl font-bold">Nuestros Servicios</h2>
           <p className=" text-gray-600 text-xl mt-6">
             CELAM acompaña a la comunidad con soluciones esenciales, humanas y sostenibles.
           </p>

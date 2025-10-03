@@ -4,7 +4,7 @@ export const About: React.FC = () => {
       <div className="max-w-10/12 max-sm:max-w-11/12 mx-auto space-y-16">
 
         <header className="text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">Nuestra Cooperativa</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">Nuestra Cooperativa</h1>
           <p className="text-xl text-gray-700">
             CELAM es más que energía: somos comunidad, compromiso y visión compartida.
           </p>

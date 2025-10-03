@@ -1,4 +1,4 @@
-import logo from "../../public/logo.png"
+
 
 export const Footer: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
         {/* Identidad */}
         <div className="flex flex-col gap-4">
           <a className="w-full " href="#">
-                <img className="w-5/12  h-auto object-cover" src={logo} alt="Logo de CELAM" />
+                <img className="w-5/12  h-auto object-cover" src="./logo.png" alt="Logo de CELAM" />
             </a>
            
           <p className="text-white/80">
