@@ -10,7 +10,7 @@ type Props = {
 
 export default function AccesoItem2({ label, path, icon }: Props) {
     return (
-        <div className="group relative w-44 h-44 border-slate-300  rounded-full">
+        <div className="group relative isolate w-44 h-44 border-slate-300  rounded-full ">
             {/* burbuja */}
             <div
                 className="absolute left-0 top-0 w-16 h-16 rounded-full bg-sky-200/90
@@ -19,7 +19,7 @@ export default function AccesoItem2({ label, path, icon }: Props) {
                group-hover:-translate-x-1/2 group-hover:-translate-y-1/2
                group-hover:w-full group-hover:h-full
                group-hover:bg-orange-400/15
-               z-[9999]"   // 🔥 siempre encima
+               z-20"   // 🔥 siempre encima
             ></div>
 
             {/* contenido */}
@@ -35,6 +35,6 @@ export default function AccesoItem2({ label, path, icon }: Props) {
             </Link>
         </div>
 
-       
+
     )
 }
