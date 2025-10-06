@@ -12,16 +12,16 @@ import { QuienesSomos } from "./pages/QuienesSomos";
 import { Consejo } from "./pages/Consejo";
 import { MisionVision } from "./pages/MisionVision";
 
-import { ScrollToTop } from "./components/common/ScrollToTop"; 
+import { ScrollToTop } from "./components/common/ScrollToTop";
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Header />
 
-      <ScrollToTop /> 
+      <ScrollToTop />
 
-      <main className="min-h-[70vh]">
+      <main className="min-h-[70vh]  text-gray-900">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/quienes-somos" element={<QuienesSomos />} />

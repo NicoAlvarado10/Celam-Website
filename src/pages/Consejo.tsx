@@ -29,9 +29,9 @@ export const Consejo: React.FC = () => {
           <p className="text-xl mt-6">CELAM – Compromiso, gestión y transparencia</p>
         </div>
       </section>
-<div>
-    
-</div>
+      <div>
+
+      </div>
       {/* MESA DIRECTIVA */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold mb-6 text-center">Mesa Directiva</h2>

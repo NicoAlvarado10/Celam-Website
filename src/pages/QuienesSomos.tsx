@@ -1,6 +1,6 @@
 export const QuienesSomos: React.FC = () => {
   return (
-    <main className="bg-gray-50 text-gray-900">
+    <div className="">
       {/* HERO */}
       <section className="relative bg-[url('/bg-hero.jpg')] bg-cover max-sm:pt-16 bg-center h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0 bg-black/60" />
@@ -18,7 +18,7 @@ export const QuienesSomos: React.FC = () => {
         <div className="space-y-6 text-gray-700 leading-relaxed">
           <p><strong>Fundación:</strong> 24 de marzo de 1953</p>
           <p>
-            <strong>Inicio del servicio eléctrico:</strong> 1º de noviembre de 1954, 
+            <strong>Inicio del servicio eléctrico:</strong> 1º de noviembre de 1954,
             con la adquisición de la Usina privada.
           </p>
           <p>
@@ -34,42 +34,42 @@ export const QuienesSomos: React.FC = () => {
             <strong>INAES:</strong> Matrícula Nº 2881 – 29 de enero de 1954.
           </p>
           <p>
-            <strong>Actividad principal:</strong> Distribución de energía eléctrica.  
+            <strong>Actividad principal:</strong> Distribución de energía eléctrica.
             <br />
             <strong>Actividad secundaria:</strong> Distribución de agua potable.
           </p>
         </div>
       </section>
 
-     {/* VALORES */}
-<section className="bg-gray-100 py-20">
-  <div className="max-w-7xl mx-auto px-6">
-    <h2 className="text-3xl font-bold mb-12 text-center">Nuestros Valores</h2>
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div className="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
-        
-        <h3 className="text-xl font-semibold mb-2">Eficiencia</h3>
-        <p className="text-gray-600">En la prestación de los servicios.</p>
-      </div>
-      <div className="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
-        
-        <h3 className="text-xl font-semibold mb-2">Calidad</h3>
-        <p className="text-gray-600">Compromiso con un servicio confiable.</p>
-      </div>
-      <div className="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
-      
-        <h3 className="text-xl font-semibold mb-2">Transparencia</h3>
-        <p className="text-gray-600">Gestión clara y responsable.</p>
-      </div>
-      <div className="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
-         
-        <h3 className="text-xl font-semibold mb-2">Participación</h3>
-        <p className="text-gray-600">De los asociados en la toma de decisiones.</p>
-      </div>
-    </div>
-  </div>
-</section>
-{/* PRINCIPIOS COOPERATIVOS */}
+      {/* VALORES */}
+      <section className="bg-gray-100 py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-12 text-center">Nuestros Valores</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
+
+              <h3 className="text-xl font-semibold mb-2">Eficiencia</h3>
+              <p className="text-gray-600">En la prestación de los servicios.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
+
+              <h3 className="text-xl font-semibold mb-2">Calidad</h3>
+              <p className="text-gray-600">Compromiso con un servicio confiable.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
+
+              <h3 className="text-xl font-semibold mb-2">Transparencia</h3>
+              <p className="text-gray-600">Gestión clara y responsable.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
+
+              <h3 className="text-xl font-semibold mb-2">Participación</h3>
+              <p className="text-gray-600">De los asociados en la toma de decisiones.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* PRINCIPIOS COOPERATIVOS */}
       <section className="bg-gray-50 py-20">
         <div className="max-w-10/12 max-sm:max-w-11/12 mx-auto ">
           <h2 className="text-3xl font-bold mb-12 text-center">Principios Cooperativos</h2>
@@ -90,6 +90,6 @@ export const QuienesSomos: React.FC = () => {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 };

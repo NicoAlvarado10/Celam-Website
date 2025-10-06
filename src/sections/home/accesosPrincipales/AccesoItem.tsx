@@ -9,7 +9,10 @@ type Props = {
 export default function AccesoItem({ label, path, icon }: Props) {
   return (
     <article
-      className="w-44 h-42 mx-auto bg-gray-100 rounded-full transition duration-150 flex flex-col items-center justify-center text-center cursor-pointer overflow-hidden
+      className="
+      w-44 h-42 mx-auto
+       bg-gray-100 rounded-full 
+       transition duration-150 flex flex-col items-center justify-center text-center cursor-pointer overflow-hidden
      hover:bg-gradient-to-bl hover:from-blue-500 hover:to-blue-700 hover:text-white"
     >
       <Link
@@ -21,6 +24,10 @@ export default function AccesoItem({ label, path, icon }: Props) {
           {label}
         </h3>
       </Link>
+      <div className="
+      absolute bg-[#94b6cf] group-hover:bg-[#421e06] 
+      rounded-full transition-all duration-300 ease-in-out -top-8 -left-5 
+      w-[4rem] h-[4rem]"></div>
     </article>
   )
 }
