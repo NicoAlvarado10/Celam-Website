@@ -26,7 +26,7 @@ export default function AccesoItem2({ label, path, icon }: Props) {
             <Link
                 to={path}
                 className="relative z-10 flex flex-col items-center justify-center
-               gap-2 w-10/12 mx-auto text-center"
+               gap-2 w-10/12 mx-auto text-center text-blue-900"
             >
                 <i className={`ri-${icon} text-6xl max-sm:text-5xl `} />
                 <h3 className="text-sm font-semibold uppercase tracking-wide leading-tight break-words">
