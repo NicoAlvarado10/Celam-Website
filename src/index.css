@@ -15,6 +15,6 @@ h1, h2, h3 {
   letter-spacing: 1px;
 }
 .btn-attention {
-  @apply bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition;
+  @apply  text-white px-2 py-1 ;
 }
 

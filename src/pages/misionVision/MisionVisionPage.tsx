@@ -1,13 +1,13 @@
 import { institucional } from "./misionVision.config";
 export const MisionVisionPage: React.FC = () => {
   return (
-    <section className="bg-gray-50 text-gray-900">
+    <section className=" text-gray-900">
       {/* HERO */}
-      <div className="relative bg-[url('/bg-hero.jpg')] max-sm:pt-16 bg-cover bg-center h-[80vh] flex items-center justify-center">
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-4xl font-bold mb-2">Misión y Visión</h1>
-          <p className="text-xl mt-6">Compromiso, eficiencia y desarrollo sostenible para la comunidad</p>
+      <div className="relative max-sm:pt-16 bg-cover bg-gray-50 h-[80vh] flex items-center justify-center">
+       
+        <div className="relative z-10 text-center text-black px-4">
+          <h1 className="text-4xl text-[#0049AF] font-bold mb-2">Misión y Visión</h1>
+          <p className="text-xl  mt-6">Compromiso, eficiencia y desarrollo sostenible para la comunidad</p>
         </div>
       </div>
 

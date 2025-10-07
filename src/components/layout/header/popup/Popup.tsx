@@ -11,13 +11,13 @@ export const Popup = ({ type, onClose }: Props) => {
   const data = popupData[type]
 
   return (
-    <div className="fixed inset-0 bg-black/50 h-screen flex justify-center items-center z-50">
+    <div className="fixed inset-0 bg-black/50 h-screen flex justify-center items-center z-50 ">
       <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.3, ease: "easeOut" }}
 
-      className="bg-white text-black px-8 py-10 rounded-2xl shadow-2xl max-w-md w-full relative">
+      className="bg-white text-black px-8   py-10 rounded-2xl shadow-2xl max-w-md max-sm:max-w-11/12 mx-auto w-full relative">
         {/* Botón de cierre */}
         <button
           onClick={onClose}

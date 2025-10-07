@@ -3,10 +3,10 @@ export const QuienesSomosPage: React.FC = () => {
   return (
     <section >
       {/* HERO */}
-      <div className="relative bg-[url('/bg-hero.jpg')] bg-cover max-sm:pt-16 bg-center h-[80vh] flex items-center justify-center">
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 text-center text-white px-4">
-         <h1 className="text-5xl max-sm:text-3xl font-bold mb-4">
+      <div className="relative bg-gray-50 max-sm:pt-16  h-[80vh] flex items-center justify-center">
+       
+        <div className="relative z-10 text-center text-black px-4">
+         <h1 className="text-5xl text-[#0049AF] max-sm:text-3xl font-bold mb-4">
             Quiénes Somos
           </h1>
           <p className="mx-auto text-xl mt-6">CELAM, una cooperativa con más de 70 años de compromiso con la comunidad.</p>

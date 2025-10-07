@@ -8,13 +8,13 @@ export const TopBar = ({ onMenuToggle }: { onMenuToggle: () => void }) => {
 
   return (
     <>
-      <div className="backdrop-blur-md shadow-sm border-b p-4 z-50 relative">
+      <div className="backdrop-blur-md bg-[#0049AF] shadow-sm  p-4 z-50 relative">
         <div className="max-w-10/12 mx-auto max-md:max-w-11/12 flex justify-between gap-6 items-center">
          <a href="/" className="flex w-full items-center">
   <img
     src="./logo.png"
     alt="Logo CELAM"
-    className="w-[140px] max-md:w-[120px] h-auto object-contain"
+    className="w-[170px] max-md:w-[120px] h-auto object-contain"
   />
         </a>
 
@@ -33,21 +33,21 @@ export const TopBar = ({ onMenuToggle }: { onMenuToggle: () => void }) => {
            
            <button
   onClick={() => setPopupType("guardia")}
-  className="btn-attention tracking-wide cursor-pointer flex items-center gap-2 text-sm uppercase"
+  className="btn-attention tracking-wide cursor-pointer flex items-center  text-sm uppercase"
 >
   <i className="ri-customer-service-line text-2xl" /> Atención Guardia
             </button>
 
             <button
   onClick={() => setPopupType("gerencia")}
-  className="btn-attention text-sm tracking-wide cursor-pointer flex items-center gap-2 uppercase"
+  className="btn-attention text-sm tracking-wide cursor-pointer flex items-center  uppercase"
 >
   <i className="ri-briefcase-line text-2xl" /> Atención Gerencia
             </button>
 
             <button
   onClick={() => setPopupType("serviciosSociales")}
-  className="btn-attention cursor-pointer text-sm tracking-wide flex items-center gap-2 uppercase"
+  className="btn-attention cursor-pointer text-sm tracking-wide flex items-center uppercase"
 >
   <i className="ri-hand-heart-line text-2xl" /> Servicios Sociales
             </button>
