@@ -1,7 +1,6 @@
-// sections/home/AccesosPrincipales.tsx
-import AccesoItem from "./accesosPrincipales/AccesoItem"
-import AccesoItem2 from "./accesosPrincipales/AccesoItem2"
-import { accesos } from "./accesosPrincipales/acceso.config"
+
+import AccesoItem2 from "./AccesoItem2"
+import { accesos } from "./acceso.config"
 export default function AccesosPrincipales() {
   return (
     <section className="py-20  bg-gray-50">
