@@ -1,20 +1,25 @@
 @import "tailwindcss";
 
-body, html{
-    scroll-behavior: smooth;
+body,
+html {
+  scroll-behavior: smooth;
 
+  font-family: 'Bitter', 'Times New Roman', Times, serif;
 }
 
-body, p {
-  font-family: 'Inter', sans-serif;
+body,
+p {
+  font-family: 'Bitter', 'Times New Roman', Times, serif;
 }
 
-h1, h2, h3 {
-  font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: 'Clarkson",Helvetica,sans-serif';
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.btn-attention {
-  @apply  text-white px-2 py-1 ;
-}
 
+.btn-attention {
+  @apply text-white px-2 py-1;
+}
