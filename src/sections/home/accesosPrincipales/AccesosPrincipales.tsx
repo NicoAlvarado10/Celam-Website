@@ -3,7 +3,7 @@ import AccesoItem2 from "./AccesoItem2"
 import { accesos } from "./acceso.config"
 export default function AccesosPrincipales() {
   return (
-    <section className="py-20  bg-gray-50">
+    <section className="py-20  ">
       <div className="max-w-10/12 max-md:max-w-11/12 mx-auto">
         <h2 className="text-4xl max-sm:text-3xl font-bold text-center text-primary mb-4 uppercase">
           ¿Qué necesitás hacer hoy?

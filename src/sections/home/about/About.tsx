@@ -1,7 +1,9 @@
+import { CardBlock } from "../../../components/common/CardBlock";
 import { aboutContent } from "./about.config";
+
 export const About: React.FC = () => {
   return (
-    <section className="bg-white text-gray-900 py-20" id="about">
+    <section className="bg-gray-50 text-gray-900 py-20" id="about">
       <div className="max-w-10/12 max-sm:max-w-11/12 mx-auto space-y-16">
 
         <div className="text-center">
@@ -11,19 +13,19 @@ export const About: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1  gap-8">
-          {aboutContent.cards.map((card, i) => (
-            <article key={i} className="bg-gray-100 rounded-xl p-6 shadow hover:shadow-md transition">
-              <div className="flex items-center gap-4 mb-4">
-                <i className={`${card.icon} text-3xl`} aria-hidden="true" />
-                <h2 className="text-xl font-semibold">{card.title}</h2>
-              </div>
-              <p className="text-gray-700 leading-relaxed mb-2">{card.description}</p>
-              <a href={card.link.href} className="text-sm text-blue-700 hover:underline">
-                {card.link.label}
-              </a>
-            </article>
-          ))}
+        <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:px-4 gap-8">
+         {aboutContent.cards.map((card, i) => (
+    <CardBlock
+      key={i}
+      title={card.title}
+      description={card.description}
+      iconClass={card.icon}
+      link={card.link}
+       delay={i * 0.3}
+      
+    />
+  ))}
+
 
         </div>
       </div>

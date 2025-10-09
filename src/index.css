@@ -4,18 +4,19 @@ body,
 html {
   scroll-behavior: smooth;
 
-  font-family: 'Bitter', 'Times New Roman', Times, serif;
+  font-family: sans-serif;
 }
 
 body,
-p {
-  font-family: 'Bitter', 'Times New Roman', Times, serif;
+p,
+a {
+  font-family:  sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Clarkson",Helvetica,sans-serif';
+  font-family: sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
