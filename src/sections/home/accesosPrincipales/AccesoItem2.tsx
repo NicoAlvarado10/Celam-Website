@@ -13,10 +13,10 @@ export default function AccesoItem2({ label, path, icon }: Props) {
         <Link to={path} className="group relative isolate w-44 h-44 border-slate-300  rounded-full mx-auto">
             {/* burbuja */}
             <div
-                className="absolute left-0 top-0 w-16 h-16 rounded-full bg-sky-200/90
+                className="absolute left-2 max-sm:left-10 top-[-20%] max-sm:top-[-10%] w-16 h-16 max-sm:w-10 max-sm:h-10 rounded-full bg-sky-200/90
                transition-all duration-900 ease-in-out
                group-hover:left-1/2 group-hover:top-1/2
-               group-hover:-translate-x-1/2 group-hover:-translate-y-[65%]
+               group-hover:-translate-x-1/2 group-hover:-translate-y-[60%]
                group-hover:w-full group-hover:h-full
                group-hover:bg-orange-400/15
                z-20"   // 🔥 siempre encima

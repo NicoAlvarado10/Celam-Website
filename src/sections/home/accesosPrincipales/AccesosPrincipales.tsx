@@ -9,7 +9,7 @@ export default function AccesosPrincipales() {
           ¿Qué necesitás hacer hoy?
         </h2>
         <p className="text-xl text-gray-800 text-center text-primary mb-12 ">Accedé rapidamente a los trámites más esenciales.</p>
-        <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2  gap-6">
           {accesos.map(({ label, path, icon }) => (
             
             <AccesoItem2 key={path} label={label} path={path} icon={icon} />
