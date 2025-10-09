@@ -1,22 +1,39 @@
 import { mesaDirectiva,vocalesTitulares,vocalesSuplentes,otrosCargos } from './consejo.config';
+import {motion} from "framer-motion"
 
 export const ConsejoPage: React.FC = () => {
 
   return (
     <section className="bg-gray-50 text-gray-900">
       {/* HERO */}
-      <div className="relative  h-[80vh] max-sm:pt-16 flex items-center justify-center">
+      <div className="relative  h-[70vh] pt-20  flex items-center justify-center">
        
         <div className="relative z-10 text-center text-black px-4">
-          <h1 className="text-5xl max-sm:text-3xl text-[#0049AF] font-bold mb-2">Consejo de Administración</h1>
-          <p className="text-xl mt-6">CELAM – Compromiso, gestión y transparencia</p>
+          <motion.h1
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="text-4xl max-sm:text-3xl text-[#0049AF] font-bold mb-4"
+>
+  Consejo de Administración
+</motion.h1>
+
+<motion.p
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+  className="text-xl mt-6"
+>
+  CELAM – Compromiso, gestión y transparencia
+</motion.p>
+
         </div>
       </div>
       <div>
 
       </div>
       {/* MESA DIRECTIVA */}
-      <article className="max-w-6xl mx-auto px-6 py-16">
+      <article className="max-w-6xl mx-auto px-6 ">
         <h2 className="text-3xl font-bold mb-6 text-center">Mesa Directiva</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white shadow rounded-lg border">

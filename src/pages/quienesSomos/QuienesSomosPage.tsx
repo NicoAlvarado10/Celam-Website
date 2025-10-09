@@ -1,21 +1,36 @@
 import { quienesSomos } from "./quienesSomos.config";
+import {  motion } from "framer-motion"
+
 export const QuienesSomosPage: React.FC = () => {
   return (
     <section >
       {/* HERO */}
-      <div className="relative bg-gray-50 max-sm:pt-16  h-[80vh] flex items-center justify-center">
+      <div className="relative bg-gray-50   h-[70vh] flex items-center pt-16 justify-center">
        
         <div className="relative z-10 text-center text-black px-4">
-         <h1 className="text-5xl text-[#0049AF] max-sm:text-3xl font-bold mb-4">
-            Quiénes Somos
-          </h1>
-          <p className="mx-auto text-xl mt-6">CELAM, una cooperativa con más de 70 años de compromiso con la comunidad.</p>
+         <motion.h1
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="text-4xl text-[#0049AF] max-sm:text-3xl font-bold mb-4"
+>
+  Quiénes Somos
+</motion.h1>
+
+<motion.p
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+  className="mx-auto text-xl mt-6"
+>
+  CELAM, una cooperativa con más de 70 años de compromiso con la comunidad.
+</motion.p>
 
         </div>
       </div>
 
-      {/* HISTORIA */}
-      <article className="max-w-6xl mx-auto px-6 py-20">
+     <div className="flex flex-col max-w-7xl mx-auto px-6 gap-8">
+      <article className="py-10">
         <h2 className="text-3xl font-bold mb-8 text-center">{quienesSomos.historia.title}</h2>
         <div className="space-y-6 text-gray-700 leading-relaxed">
           {quienesSomos.historia.items.map((item, i) => (
@@ -26,9 +41,9 @@ export const QuienesSomosPage: React.FC = () => {
         </div>
       </article>
 
-      {/* VALORES */}
-      <article className="bg-gray-100 py-20">
-        <div className="max-w-7xl mx-auto px-6">
+      
+      <article className=" pt-10">
+        <div className="px-6">
           <h2 className="text-3xl font-bold mb-12 text-center">Nuestros Valores</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {quienesSomos.valores.map((valor, i) => (
@@ -44,9 +59,9 @@ export const QuienesSomosPage: React.FC = () => {
           </div>
         </div>
       </article>
-      {/* PRINCIPIOS COOPERATIVOS */}
-      <div className="bg-gray-50 py-20">
-        <div className="max-w-10/12 max-sm:max-w-11/12 mx-auto ">
+      
+      <div className="py-20">
+        <div >
           <h2 className="text-3xl font-bold mb-12 text-center">Principios Cooperativos</h2>
           <article className="grid md:grid-cols-3 gap-6">
            {quienesSomos.principios.map((item, i) => (
@@ -61,6 +76,9 @@ export const QuienesSomosPage: React.FC = () => {
           </article>
         </div>
       </div>
+
+     </div>
+
     </section>
   );
 };
