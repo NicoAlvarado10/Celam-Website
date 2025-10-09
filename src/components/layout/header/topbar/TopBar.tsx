@@ -10,7 +10,7 @@ export const TopBar = ({ onMenuToggle }: { onMenuToggle: () => void }) => {
 
   return (
     <>
-      <div className="backdrop-blur-md bg-[#0049AF] shadow-sm  p-4 z-50 relative">
+      <div className="backdrop-blur-md bg-[#0049AF] shadow-sm  p-4 max-md:px-0 max-md:py-2 z-50 relative">
         <div className="max-w-10/12 mx-auto max-md:max-w-11/12 flex justify-between gap-6 items-center">
          <a href="/" className="flex w-full items-center">
   <img
