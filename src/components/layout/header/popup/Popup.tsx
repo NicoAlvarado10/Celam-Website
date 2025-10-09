@@ -1,6 +1,7 @@
 import { popupData,  } from "../config/nav.config"
 import type { PopupType } from "../config/nav.config"
 import {motion} from "framer-motion"
+import { useEffect } from "react";
 
 interface Props {
   type: PopupType
@@ -10,9 +11,24 @@ interface Props {
 export const Popup = ({ type, onClose }: Props) => {
   const data = popupData[type]
 
+useEffect(() => {
+  const handleClickOutside = (event: MouseEvent) => {
+    const popupElement = document.getElementById("popup-content");
+    if (popupElement && !popupElement.contains(event.target as Node)) {
+      onClose();
+    }
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [onClose]);
+
   return (
     <div className="fixed inset-0 bg-black/50 h-screen flex justify-center items-center z-50 ">
       <motion.div
+      id="popup-content"
       initial={{ opacity: 0, scale: 0.95 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.3, ease: "easeOut" }}
