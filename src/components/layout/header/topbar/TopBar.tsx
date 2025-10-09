@@ -2,6 +2,8 @@
 import { useState } from "react"
 import { Popup } from "../popup/Popup"
 import type { PopupType } from "../config/nav.config"
+import logo from "../../../../assets/logo.png";
+
 
 export const TopBar = ({ onMenuToggle }: { onMenuToggle: () => void }) => {
   const [popupType, setPopupType] = useState<PopupType | null>(null)
@@ -12,7 +14,7 @@ export const TopBar = ({ onMenuToggle }: { onMenuToggle: () => void }) => {
         <div className="max-w-10/12 mx-auto max-md:max-w-11/12 flex justify-between gap-6 items-center">
          <a href="/" className="flex w-full items-center">
   <img
-    src="./logo.png"
+    src={logo}
     alt="Logo CELAM"
     className="w-[170px] max-md:w-[120px] h-auto object-contain"
   />

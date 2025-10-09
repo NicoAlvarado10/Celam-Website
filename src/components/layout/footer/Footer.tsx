@@ -1,5 +1,5 @@
 import { footerContent } from "./footer.config";
-
+import logo from "../../../assets/logo.png"
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-black/95 text-white pt-20 " id="contact">
@@ -9,8 +9,8 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col gap-4">
           <a className="w-full " href="#">
                <img
-              src={footerContent.identidad.logo}
-              alt={footerContent.identidad.alt}
+              src={logo}
+              alt="Logo CELAM"
               className="w-5/12 h-auto object-cover"
             />
 

@@ -2,8 +2,6 @@
 
 export const footerContent = {
   identidad: {
-    logo: "./logo.png",
-    alt: "Logo de CELAM",
     nombre: "Cooperativa de Electricidad, Obras y Servicios Públicos Ltda.",
     direccion: "General Paz y Sarmiento - CP 5843",
     localidad: "Adelia María, Córdoba, Argentina",
