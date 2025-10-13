@@ -18,13 +18,13 @@ export default function AccesoItem2({ label, path, icon }: Props) {
                group-hover:left-1/2 group-hover:top-1/2
                group-hover:-translate-x-1/2 group-hover:-translate-y-[60%]
                group-hover:w-full group-hover:h-full
-               group-hover:bg-orange-400/15
+               group-hover:bg-sky-400/15
                z-20"   // 🔥 siempre encima
             ></div>
 
             {/* contenido */}
             <span
-                className="relative z-10 flex flex-col items-center justify-center
+                className="relative z-50 flex flex-col items-center justify-center
                gap-2 w-10/12 mx-auto text-center text-blue-900"
             >
                 <i className={`ri-${icon} text-6xl max-sm:text-5xl `} />
