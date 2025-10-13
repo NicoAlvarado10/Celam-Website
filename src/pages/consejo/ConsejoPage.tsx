@@ -6,7 +6,7 @@ export const ConsejoPage: React.FC = () => {
   return (
     <section className="bg-gray-50 text-gray-900">
       {/* HERO */}
-      <div className="relative  h-[70vh] pt-20  flex items-center justify-center">
+      <div className="relative  h-[70vh] max-md:h-full max-md:pb-20 max-sm:pt-32 pt-20  flex items-center justify-center">
        
         <div className="relative z-10 text-center text-black px-4">
           <motion.h1
@@ -34,7 +34,7 @@ export const ConsejoPage: React.FC = () => {
       </div>
       {/* MESA DIRECTIVA */}
       <article className="max-w-6xl mx-auto px-6 ">
-        <h2 className="text-3xl font-bold mb-6 text-center">Mesa Directiva</h2>
+        <h2 className="text-3xl max-sm:text-2xl font-bold mb-6 text-center">Mesa Directiva</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white shadow rounded-lg border">
             <thead className="bg-gray-100">
@@ -57,7 +57,7 @@ export const ConsejoPage: React.FC = () => {
 
       {/* VOCALES TITULARES */}
       <article className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-6 text-center">Vocales Titulares</h2>
+        <h2 className="text-3xl max-sm:text-2xl font-bold mb-6 text-center">Vocales Titulares</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white shadow rounded-lg border">
             <thead className="bg-gray-100">
@@ -78,7 +78,7 @@ export const ConsejoPage: React.FC = () => {
 
       {/* VOCALES SUPLENTES */}
       <article className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-6 text-center">Vocales Suplentes</h2>
+        <h2 className="text-3xl max-sm:text-2xl font-bold mb-6 text-center">Vocales Suplentes</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white shadow rounded-lg border">
             <thead className="bg-gray-100">
@@ -99,7 +99,7 @@ export const ConsejoPage: React.FC = () => {
 
       {/* OTROS CARGOS */}
       <article className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-6 text-center">Otros Cargos</h2>
+        <h2 className="text-3xl max-sm:text-2xl font-bold mb-6 text-center">Otros Cargos</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white shadow rounded-lg border">
             <thead className="bg-gray-100">

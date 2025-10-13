@@ -32,7 +32,7 @@ className={`rounded-xl p-6 shadow hover:shadow-md transition duration-150 hover:
 >
       <div className="flex items-center gap-4 mb-4">
         {iconClass && <i className={`${iconClass} text-3xl`} aria-hidden="true" />}
-        <h2 className="text-xl font-semibold text-gray-900">{title}</h2>
+        <h2 className="text-lg font-semibold text-gray-900">{title}</h2>
       </div>
 
       <p className="text-gray-700 leading-relaxed mb-2">{description}</p>
