@@ -16,7 +16,7 @@ export const TopBar = ({ onMenuToggle }: { onMenuToggle: () => void }) => {
   <img
     src={logo}
     alt="Logo CELAM"
-    className="w-[170px] max-md:w-[120px] h-auto object-contain"
+    className="w-[170px] max-md:w-[120px] max-lg:w-[100px] h-auto object-contain"
   />
         </a>
 
