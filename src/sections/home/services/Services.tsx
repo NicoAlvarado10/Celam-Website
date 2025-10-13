@@ -29,7 +29,7 @@ export const Services: React.FC = () => {
 
         </div>
 
-      <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:px-4 gap-4">
+      <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:px-4 gap-4">
          {servicesContent.items.map((service, index) => (
     <CardBlock
       key={index}
