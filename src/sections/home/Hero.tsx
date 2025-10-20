@@ -1,4 +1,5 @@
-import {motion} from "framer-motion"
+import {motion} from "framer-motion";
+import Botton from "../../components/common/Botton"
 
 export const Hero: React.FC = () => {
   return (
@@ -35,25 +36,13 @@ export const Hero: React.FC = () => {
 
 
   <div className="mt-8 flex flex-wrap gap-4 justify-start max-md:justify-center">
-  <motion.a
-  href="#about"
-  initial={{ opacity: 0, }}
-  animate={{ opacity: 1,}}
-  transition={{ duration: 0.6, delay: 0.6 }}
-  className="bg-[#0049AF] hover:bg-[#003b8f] text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#0049AF] focus:ring-offset-2"
->
-  Conocé más
-</motion.a>
+   <Botton href="#about" className="rounded-xl  font-semibold px-6 py-3" variant="primary" delay={0.6}>
+        Conocé más
+      </Botton>
 
-<motion.a
-  href="#services"
-  initial={{ opacity: 0,}}
-  animate={{ opacity: 1,  }}
-  transition={{ duration: 0.5,  delay: 0.8 }}
-  className="border-2 border-[#0049AF] text-[#0049AF] hover:bg-[#0049AF] hover:text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#0049AF] focus:ring-offset-2"
->
-  Servicios
-</motion.a>
+      <Botton href="#services"  className="rounded-xl font-semibold px-6 py-3" variant="outline" delay={0.8}>
+        Servicios
+      </Botton>
 
 </div>
       </div>

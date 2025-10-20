@@ -1,4 +1,5 @@
 import {motion} from "framer-motion"
+import Botton from "./Botton"
 
 interface CardBlockProps {
   title: string;
@@ -38,13 +39,18 @@ className={`rounded-xl p-6 shadow hover:shadow-md transition duration-150 hover:
       <p className="text-gray-700 leading-relaxed mb-2">{description}</p>
 
       {link && (
-         <a
-    href={link.href}
-    className="self-start inline-flex items-center gap-2 text-sm font-medium text-white bg-[#0049AF] px-4 py-2 rounded-md hover:bg-[#003b8e] transition-colors"
+        <span >
+
+    <Botton
+     href={link.href}
+     variant="primary" 
+     delay={0.8}
+     className="rounded-md "
   >
     {link.label}
-    <i className="ri-arrow-right-line text-base" />
-  </a>
+     <i className="ri-arrow-right-line ml-2 text-base" />
+  </Botton>
+        </span>
 
       )}
     </motion.article>

@@ -1,39 +1,34 @@
-
-
 import { Link } from "react-router-dom"
 
 type Props = {
-    label: string
-    path: string
-    icon: string
+  label: string
+  path: string
+  icon: string
 }
 
 export default function AccesoItem2({ label, path, icon }: Props) {
-    return (
-        <Link to={path} className="group relative isolate w-44 h-44 border-slate-300  rounded-full mx-auto">
-            {/* burbuja */}
-            <div
-                className="absolute left-2 max-sm:left-10 top-[-20%] max-sm:top-[-10%] w-16 h-16 max-sm:w-10 max-sm:h-10 rounded-full bg-sky-200/90
-               transition-all duration-900 ease-in-out
-               group-hover:left-1/2 group-hover:top-1/2
-               group-hover:-translate-x-1/2 group-hover:-translate-y-[60%]
-               group-hover:w-full group-hover:h-full
-               group-hover:bg-sky-400/15
-               z-20"   // 🔥 siempre encima
-            ></div>
+  return (
+    <Link
+      to={path}
+      className="group relative isolate  rounded-full mx-auto flex flex-col items-center justify-center"
+    >
+      <span className="relative z-50 flex flex-col items-center justify-center gap-2 w-10/12 mx-auto text-center text-blue-900">
+        {/* Ícono con burbuja animada al costado */}
+        <i
+          className={`ri-${icon} text-6xl max-sm:text-5xl relative z-20
+            after:content-[''] after:absolute group-hover:after:top-[50%] after:left-[-2.5rem] after:-translate-y-1/2 
+            after:w-10 after:h-10 after:rounded-full after:bg-sky-200/90
+            after:transition-all after:duration-700 after:ease-in-out
+            group-hover:after:left-1/2 group-hover:after:-translate-x-1/2
+            group-hover:after:w-20 group-hover:after:h-20 group-hover:after:bg-sky-400/30
+            after:z-10`}
+        />
 
-            {/* contenido */}
-            <span
-                className="relative z-50 flex flex-col items-center justify-center
-               gap-2 w-10/12 mx-auto text-center text-blue-900"
-            >
-                <i className={`ri-${icon} text-6xl max-sm:text-5xl `} />
-                <h3 className="text-sm font-semibold uppercase tracking-wide leading-tight break-words">
-                    {label}
-                </h3>
-            </span>
-        </Link>
-
-
-    )
+        {/* Texto sin animación */}
+        <h3 className="text-sm font-semibold group-hover:text-blue-400/90 transition-all m-4 uppercase tracking-wide leading-tight break-words">
+          {label}
+        </h3>
+      </span>
+    </Link>
+  )
 }
