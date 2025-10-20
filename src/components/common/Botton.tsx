@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import React from "react";
+import { Link } from "react-router-dom";
 
 interface BottonProps {
-  href?: string;
+  href?: string; // URL interna o externa
   children: React.ReactNode;
   variant?: "primary" | "outline";
   delay?: number;
@@ -28,20 +28,33 @@ export default function Botton({
     : "border-2 border-[#0049AF] text-[#0049AF] focus:ring-[#0049AF] hover:border-blue-500 hover:text-white";
 
   const progressBarClasses =
-    "absolute left-0 top-0 h-full w-0 transition-all duration-500 ease-out group-hover:w-full z-0 bg-[#3B82F6]";
+    "absolute left-0 top-0 h-full w-0 transition-all duration-500 ease-out group-hover:w-full z-0 bg-[#3B82F6] pointer-events-none";
+
+  const isInternal = href?.startsWith("/");
+
+
+  const MotionLink = motion(Link);
+  const MotionA = motion.a;
+
+  const MotionComponent = isInternal ? MotionLink : MotionA;
+
+
+  const componentProps = isInternal
+    ? { to: href }
+    : { href: href, target: "_blank", rel: "noopener noreferrer" };
 
   return (
-    <motion.a
-      href={href}
+    <MotionComponent
+      {...componentProps}
+      className={`${baseClasses} ${variantClasses} ${className}`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration, delay }}
-      className={`${baseClasses} ${variantClasses} ${className}`}
     >
-      {/* Barra de relleno animada */}
+ 
       <span className={progressBarClasses} />
-      {/* Texto */}
+   
       <span className="relative z-10">{children}</span>
-    </motion.a>
+    </MotionComponent>
   );
 }
