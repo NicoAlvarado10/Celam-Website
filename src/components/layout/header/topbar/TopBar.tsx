@@ -35,34 +35,34 @@ export const TopBar = ({ onMenuToggle }: { onMenuToggle: () => void }) => {
            
            <button
   onClick={() => setPopupType("guardia")}
-  className="btn-attention tracking-wide cursor-pointer flex items-center  text-sm uppercase"
+  className="px-3 py-2 hover:bg-secondary transition duration-150  rounded-full tracking-wide cursor-pointer flex items-center  text-sm uppercase"
 >
   <i className="ri-customer-service-line text-2xl" /> Atención Guardia
             </button>
 
             <button
   onClick={() => setPopupType("gerencia")}
-  className="btn-attention text-sm tracking-wide cursor-pointer flex items-center  uppercase"
+  className="px-3 py-2 hover:bg-secondary transition duration-150  rounded-full text-sm tracking-wide cursor-pointer flex items-center  uppercase"
 >
   <i className="ri-briefcase-line text-2xl" /> Atención Gerencia
             </button>
 
             <button
   onClick={() => setPopupType("serviciosSociales")}
-  className="btn-attention cursor-pointer text-sm tracking-wide flex items-center uppercase"
+  className="px-3 py-2 hover:bg-secondary transition duration-150  rounded-full cursor-pointer text-sm tracking-wide flex items-center uppercase"
 >
   <i className="ri-hand-heart-line text-2xl" /> Servicios Sociales
             </button>
           </div>
 
-          <div className="flex lg:hidden items-center gap-4 text-2xl text-white">
-            <button className="cursor-pointer" onClick={() => setPopupType("guardia")} aria-label="Guardia">
+          <div className="flex lg:hidden items-center gap-2 text-2xl text-white">
+            <button className="cursor-pointer  hover:bg-secondary transition duration-150 rounded-full px-2 py-1" onClick={() => setPopupType("guardia")} aria-label="Guardia">
               <i className="ri-customer-service-line" />
             </button>
-            <button className="cursor-pointer" onClick={() => setPopupType("gerencia")} aria-label="Gerencia">
+            <button className="cursor-pointer  hover:bg-secondary transition duration-150 rounded-full px-2 py-1" onClick={() => setPopupType("gerencia")} aria-label="Gerencia">
               <i className="ri-briefcase-line" />
             </button>
-            <button className="cursor-pointer" onClick={() => setPopupType("serviciosSociales")} aria-label="Servicios Sociales">
+            <button className="cursor-pointer  hover:bg-secondary transition duration-150 rounded-full px-2 py-1" onClick={() => setPopupType("serviciosSociales")} aria-label="Servicios Sociales">
               <i className="ri-hand-heart-line" />
             </button>
             <button className="cursor-pointer text-3xl" onClick={onMenuToggle} aria-label="Abrir menú">

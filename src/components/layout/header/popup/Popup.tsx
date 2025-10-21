@@ -46,18 +46,21 @@ useEffect(() => {
         {/* Título y mensaje */}
         <div className="flex flex-col items-center mb-6">
          
-          <h2 className="text-xl font-semibold text-center normal-case">{data.title}</h2>
-          <p className="text-sm text-gray-600 mt-2 text-center">{data.message}</p>
+          <h2 className="text-xl font-semibold text-center ">{data.title}</h2>
+          <p className="text-base text-gray-600 mt-2 text-center">{data.message}</p>
         </div>
 
         {/* Lista de contactos con íconos personalizados */}
         <ul className="text-sm text-left space-y-4">
           {data.numbers.map((n, i) => (
-            <li key={i} className="flex items-start gap-3">
-              <i className={`ri-${n.icon} text-primary text-2xl mt-1`} />
+            <li key={i} className="flex items-center justify-between ">
+              <div className="flex items-center gap-2">
+
+              <i className={`ri-${n.icon} text-primary text-2xl `} />
+                <span className="text-base ">{n.regiones}</span>
+              </div>
               <div>
-                <span className="font-medium text-[15px]">{n.tel}</span><br />
-                <span className="text-xs text-gray-500">{n.regiones}</span>
+                <span className="font-medium text-base ">{n.tel} </span><br />
               </div>
             </li>
           ))}

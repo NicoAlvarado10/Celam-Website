@@ -9,9 +9,19 @@ export const popupData: Record<PopupType, {
     message: "Teléfonos disponibles para atención urgente",
     numbers: [
       {
-        tel: "(03585) 420159 / Cel: (03585) 15407627",
+        tel: "(03585) 15407627",
         regiones: "Guardia",
-        icon: "shield-cross-line"
+        icon: "phone-line"
+      },
+      {
+        tel: "(03585) 15407627",
+        regiones: "At. Clientes	",
+        icon: "phone-line"
+      },
+      {
+        tel: "(03585) 15407627 ",
+        regiones: "Facturacion ",
+        icon: "phone-line"
       }
     ]
   },
