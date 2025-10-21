@@ -24,8 +24,8 @@ export default function Botton({
     "relative overflow-hidden inline-block px-4 py-2 shadow-md transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 group";
 
   const variantClasses = isPrimary
-    ? "bg-[#0049AF] text-white focus:ring-[#0049AF]"
-    : "border-2 border-[#0049AF] text-[#0049AF] focus:ring-[#0049AF] hover:border-blue-500 hover:text-white";
+    ? "bg-primary text-white focus:ring-primary"
+    : "border-2 border-primary text-primary focus:ring-primary hover:border-blue-500 hover:text-white";
 
   const progressBarClasses =
     "absolute left-0 top-0 h-full w-0 transition-all duration-500 ease-out group-hover:w-full z-0 bg-[#3B82F6] pointer-events-none";

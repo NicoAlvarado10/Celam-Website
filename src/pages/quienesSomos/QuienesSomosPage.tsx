@@ -15,7 +15,7 @@ export const QuienesSomosPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl max-sm:text-3xl font-bold text-blue-700 mb-4 tracking-tight">
+          className="text-4xl max-sm:text-3xl font-bold text-primary mb-4 tracking-tight">
             Quiénes Somos
           </motion.h1>
           <motion.p 
@@ -50,7 +50,7 @@ export const QuienesSomosPage: React.FC = () => {
                   key={i}
                   className="bg-gray-50 p-4 rounded-xl shadow-sm hover:shadow-md transition flex items-center gap-4"
                 >
-                  <i className={`${item.icon} text-3xl text-blue-600`} aria-hidden="true" />
+                  <i className={`${item.icon} text-3xl text-primary`} aria-hidden="true" />
                   <p className="text-gray-700 font-medium">{item.title}</p>
                 </div>
               ))}
@@ -69,7 +69,7 @@ export const QuienesSomosPage: React.FC = () => {
                   key={i}
                   className="bg-gray-50 p-4 rounded-xl shadow-sm hover:shadow-md transition"
                 >
-                  <span className="text-lg max-sm:text-base uppercase font-semibold mb-2 text-blue-700">{valor.title}</span>
+                  <span className="text-lg max-sm:text-base uppercase font-semibold mb-2 text-primary">{valor.title}</span>
                   <p className="text-gray-600 leading-relaxed">{valor.description}</p>
                 </div>
               ))}

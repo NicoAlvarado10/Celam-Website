@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
   initial={{ opacity: 0, y: 30 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6,  }}
-  className="text-5xl md:text-8xl font-bold leading-tight text-[#0049AF] max-md:text-center"
+  className="text-5xl md:text-8xl font-bold leading-tight text-primary max-md:text-center"
 >
   CELAM
 </motion.h1>
@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.2 }}
-  className="mt-4 text-2xl md:text-4xl font-semibold text-[#0049AF] max-md:text-center"
+  className="mt-4 text-2xl md:text-4xl font-semibold text-primary max-md:text-center"
 >
   Energía que se renueva
 </motion.h2>

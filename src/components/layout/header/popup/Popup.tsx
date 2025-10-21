@@ -54,7 +54,7 @@ useEffect(() => {
         <ul className="text-sm text-left space-y-4">
           {data.numbers.map((n, i) => (
             <li key={i} className="flex items-start gap-3">
-              <i className={`ri-${n.icon} text-blue-500 text-2xl mt-1`} />
+              <i className={`ri-${n.icon} text-primary text-2xl mt-1`} />
               <div>
                 <span className="font-medium text-[15px]">{n.tel}</span><br />
                 <span className="text-xs text-gray-500">{n.regiones}</span>

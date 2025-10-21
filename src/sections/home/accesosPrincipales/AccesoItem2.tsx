@@ -12,7 +12,7 @@ export default function AccesoItem2({ label, path, icon }: Props) {
       to={path}
       className="group relative isolate  rounded-full mx-auto flex flex-col items-center justify-center"
     >
-      <span className="relative z-50 flex flex-col items-center justify-center gap-2 w-10/12 mx-auto text-center text-blue-900 group-hover:text-[#FB5900]/70">
+      <span className="relative z-50 flex flex-col items-center justify-center gap-2 w-10/12 mx-auto text-center text-blue-900 group-hover:text-secondary/70">
         {/* Ícono con burbuja animada al costado */}
         <i
           className={`ri-${icon} text-6xl max-sm:text-5xl relative z-20

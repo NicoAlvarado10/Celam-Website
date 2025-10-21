@@ -22,7 +22,7 @@ export default function AccesosPrincipales() {
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
-    className="text-xl text-gray-800 text-center text-primary mb-12"
+    className="text-xl text-gray-800 text-center  mb-12"
   >
     Accedé rápidamente a los trámites más esenciales.
   </motion.p>

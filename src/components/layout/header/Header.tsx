@@ -44,7 +44,7 @@ export const Header: React.FC = () => {
               >
                 <button
                   onClick={() => toggleDropdown(item.key)}
-                  className="flex items-center gap-1 cursor-pointer text-lg hover:text-blue-500 text-black/90 font-semibold"
+                  className="flex items-center gap-1 cursor-pointer text-lg hover:text-primary text-black/90 font-semibold"
                   aria-expanded={openDropdown === item.key}
                 >
                   {item.label} <i className="ri-arrow-down-s-line text-base" />
@@ -69,10 +69,10 @@ export const Header: React.FC = () => {
   >
     <NavLink
       to={subItem.path}
-      className="flex items-start gap-3 hover:text-blue-600 transition"
+      className="flex items-start gap-3 hover:text-primary transition"
       onClick={() => setOpenDropdown(null)}
     >
-      <i className={`ri-${subItem.icon} text-2xl text-blue-500 mt-1`} />
+      <i className={`ri-${subItem.icon} text-2xl text-primary mt-1`} />
       <div className="flex flex-col gap-1">
         <span className="text-sm font-semibold leading-tight normal-case">
           {subItem.label}
@@ -89,7 +89,7 @@ export const Header: React.FC = () => {
               </li>
             ) : (
               <li key={item.path}>
-                <NavLink to={item.path} className="hover:text-blue-500 text-lg">
+                <NavLink to={item.path} className="hover:text-primary text-lg">
                   {item.label}
                 </NavLink>
               </li>

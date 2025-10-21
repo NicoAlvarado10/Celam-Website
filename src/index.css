@@ -24,3 +24,9 @@ h3 {
 .btn-attention {
   @apply text-white px-2 py-1;
 }
+
+@theme {
+  --color-primary: #0049AF;
+  --color-primary-light:#3B82F6;
+  --color-secondary:#FB5900;
+}
