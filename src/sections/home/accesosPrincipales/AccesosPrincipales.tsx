@@ -5,14 +5,14 @@ import {motion} from "framer-motion"
 
 export default function AccesosPrincipales() {
   return (
-    <section className="py-20  ">
+    <section className="py-24  ">
       <div className="max-w-10/12 max-md:max-w-11/12 mx-auto">
         <motion.h2
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, ease: "easeOut", delay: 0 }}
-    className="text-4xl max-sm:text-3xl font-bold text-center text-primary mb-4 uppercase"
+    className="text-4xl max-sm:text-3xl font-bold text-center  mb-4 uppercase"
   >
     ¿Qué necesitás hacer hoy?
   </motion.h2>
