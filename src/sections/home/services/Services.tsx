@@ -29,7 +29,7 @@ export const Services: React.FC = () => {
 
         </div>
 
-      <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:px-4 gap-4">
+      <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:px-4 justify-between gap-4">
          {servicesContent.items.map((service, index) => (
     <CardBlock
       key={index}
@@ -38,6 +38,8 @@ export const Services: React.FC = () => {
       iconClass={service.iconClass}
       link={service.link}
        delay={index * 0.3}
+       imageSrc={service.imageSrc}
+       variant="imageTop"
     />
   ))}
 

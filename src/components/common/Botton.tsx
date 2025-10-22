@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 interface BottonProps {
   href?: string; // URL interna o externa
   children: React.ReactNode;
-  variant?: "primary" | "outline";
+  variant?: "primary" | "outline" | "gradient";
   delay?: number;
   duration?: number;
   className?: string;
@@ -19,16 +19,21 @@ export default function Botton({
   className = "",
 }: BottonProps) {
   const isPrimary = variant === "primary";
+  const isGradient = variant === "gradient";
+
 
   const baseClasses =
     "relative overflow-hidden inline-block px-4 py-2 shadow-md transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 group";
 
-  const variantClasses = isPrimary
-    ? "bg-primary text-white focus:ring-primary"
-    : "border-2 border-primary text-primary focus:ring-primary hover:border-blue-500 hover:text-white";
+const variantClasses = isPrimary
+  ? "bg-primary text-white focus:ring-primary"
+  : isGradient
+    ? "bg-gradient-to-r from-black/90 via-black/80 to-black/75 text-white focus:ring-neutral-700"
+    : "border-2 border-primary text-primary focus:ring-primary hover:border-secondary hover:text-white";
+
 
   const progressBarClasses =
-    "absolute left-0 top-0 h-full w-0 transition-all duration-500 ease-out group-hover:w-full z-0 bg-[#3B82F6] pointer-events-none";
+    "absolute left-0 top-0 h-full w-0 transition-all duration-500 ease-out group-hover:w-full z-0 bg-secondary pointer-events-none";
 
   const isInternal = href?.startsWith("/");
 
