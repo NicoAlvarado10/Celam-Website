@@ -77,7 +77,7 @@ export const Header: React.FC = () => {
         <span className="text-sm font-semibold leading-tight normal-case">
           {subItem.label}
         </span>
-        <span className="text-sm text-gray-500">{subItem.description}</span>
+        <span className="text-sm text-gray-600 font-medium">{subItem.description}</span>
       </div>
     </NavLink>
   </motion.li>

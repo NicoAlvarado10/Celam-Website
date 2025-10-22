@@ -56,13 +56,13 @@ export const TopBar = ({ onMenuToggle }: { onMenuToggle: () => void }) => {
           </div>
 
           <div className="flex lg:hidden items-center gap-2 text-2xl text-white">
-            <button className="cursor-pointer  hover:bg-secondary transition duration-150 rounded-full px-2 py-1" onClick={() => setPopupType("guardia")} aria-label="Guardia">
+            <button className="cursor-pointer bg-white text-primary transition duration-150 rounded-full px-2 py-1" onClick={() => setPopupType("guardia")} aria-label="Guardia">
               <i className="ri-customer-service-line" />
             </button>
-            <button className="cursor-pointer  hover:bg-secondary transition duration-150 rounded-full px-2 py-1" onClick={() => setPopupType("gerencia")} aria-label="Gerencia">
+            <button className="cursor-pointer bg-white text-primary transition duration-150 rounded-full px-2 py-1" onClick={() => setPopupType("gerencia")} aria-label="Gerencia">
               <i className="ri-briefcase-line" />
             </button>
-            <button className="cursor-pointer  hover:bg-secondary transition duration-150 rounded-full px-2 py-1" onClick={() => setPopupType("serviciosSociales")} aria-label="Servicios Sociales">
+            <button className="cursor-pointer bg-white text-primary transition duration-150 rounded-full px-2 py-1" onClick={() => setPopupType("serviciosSociales")} aria-label="Servicios Sociales">
               <i className="ri-hand-heart-line" />
             </button>
             <button className="cursor-pointer text-3xl" onClick={onMenuToggle} aria-label="Abrir menú">
