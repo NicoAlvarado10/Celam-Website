@@ -5,7 +5,7 @@ export const MisionVisionPage: React.FC = () => {
   return (
     <section className="text-gray-900 bg-white">
       {/* HERO */}
-      <div className="relative bg-gray-50 h-[140vh] max-md:h-full flex items-center flex-col justify-center gap-10 pt-30">
+      <div className="relative bg-gray-50 h-[100vh] max-2xl:h-[140vh] max-md:h-full flex items-center flex-col justify-center gap-10 pt-30">
         <div
           className="relative z-10 text-center px-6"
         >
@@ -13,7 +13,7 @@ export const MisionVisionPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl max-sm:text-3xl font-bold mb-4 tracking-tight text-primary">
+          className="text-4xl max-sm:text-3xl font-semibold mb-4 tracking-tight text-primary">
             Misión y Visión
           </motion.h1>
           <motion.p 
@@ -35,7 +35,7 @@ export const MisionVisionPage: React.FC = () => {
           className="bg-white shadow-md rounded-xl p-8 flex flex-col gap-6 hover:shadow-lg transition-all"
         >
 
-          <h2 className="text-2xl font-bold text-center">{institucional.mision.title}</h2>
+          <h2 className="text-2xl font-semibold text-center">{institucional.mision.title}</h2>
           <div className="space-y-4 text-gray-700 text-left leading-relaxed">
             {institucional.mision.paragraphs.map((p, i) => (
               <p key={i}>{p}</p>
@@ -52,7 +52,7 @@ export const MisionVisionPage: React.FC = () => {
           className="bg-white shadow-md rounded-xl p-8 flex flex-col gap-6 hover:shadow-lg transition-all"
         >
 
-          <h2 className="text-2xl font-bold text-center">{institucional.vision.title}</h2>
+          <h2 className="text-2xl font-semibold text-center">{institucional.vision.title}</h2>
           <div className="space-y-4 text-gray-700 text-left leading-relaxed">
             {institucional.vision.paragraphs.map((p, i) => (
               <p key={i}>{p}</p>

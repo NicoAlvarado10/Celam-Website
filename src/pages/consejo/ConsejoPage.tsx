@@ -13,7 +13,7 @@ export const ConsejoPage: React.FC = () => {
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
-  className="text-4xl max-sm:text-3xl text-primary font-bold mb-4"
+  className="text-4xl max-sm:text-3xl text-primary font-semibold mb-4"
 >
   Consejo de Administración
 </motion.h1>
@@ -34,7 +34,7 @@ export const ConsejoPage: React.FC = () => {
       </div>
       {/* MESA DIRECTIVA */}
       <article className="max-w-6xl mx-auto px-6 ">
-        <h2 className="text-3xl max-sm:text-2xl font-bold mb-6 text-center">Mesa Directiva</h2>
+        <h2 className="text-3xl max-sm:text-2xl font-semibold mb-6 text-center">Mesa Directiva</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white shadow rounded-lg border">
             <thead className="bg-gray-100">
@@ -57,7 +57,7 @@ export const ConsejoPage: React.FC = () => {
 
       {/* VOCALES TITULARES */}
       <article className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl max-sm:text-2xl font-bold mb-6 text-center">Vocales Titulares</h2>
+        <h2 className="text-3xl max-sm:text-2xl font-semibold mb-6 text-center">Vocales Titulares</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white shadow rounded-lg border">
             <thead className="bg-gray-100">
@@ -78,7 +78,7 @@ export const ConsejoPage: React.FC = () => {
 
       {/* VOCALES SUPLENTES */}
       <article className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl max-sm:text-2xl font-bold mb-6 text-center">Vocales Suplentes</h2>
+        <h2 className="text-3xl max-sm:text-2xl font-semibold mb-6 text-center">Vocales Suplentes</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white shadow rounded-lg border">
             <thead className="bg-gray-100">
@@ -99,7 +99,7 @@ export const ConsejoPage: React.FC = () => {
 
       {/* OTROS CARGOS */}
       <article className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl max-sm:text-2xl font-bold mb-6 text-center">Otros Cargos</h2>
+        <h2 className="text-3xl max-sm:text-2xl font-semibold mb-6 text-center">Otros Cargos</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white shadow rounded-lg border">
             <thead className="bg-gray-100">

@@ -7,14 +7,14 @@ export const About: React.FC = () => {
       <div className="max-w-10/12 max-sm:max-w-11/12 mx-auto space-y-16">
 
         <div className="text-center">
-          <motion.h1
+          <motion.h2
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay: 0 }}
-    className="text-3xl md:text-4xl font-bold mb-4"
+    className="text-3xl md:text-4xl font-semibold mb-4"
   >
     Nuestra Cooperativa
-  </motion.h1>
+  </motion.h2>
 
   <motion.p
     initial={{ opacity: 0, y: 20 }}

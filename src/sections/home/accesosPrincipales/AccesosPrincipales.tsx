@@ -12,7 +12,7 @@ export default function AccesosPrincipales() {
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, ease: "easeOut", delay: 0 }}
-    className="text-4xl max-sm:text-3xl font-bold text-center  mb-4 uppercase"
+    className="text-4xl max-sm:text-3xl font-semibold text-center  mb-4 uppercase"
   >
     ¿Qué necesitás hacer hoy?
   </motion.h2>

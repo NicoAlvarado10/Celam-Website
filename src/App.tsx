@@ -2,8 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import '@fontsource/inter/400.css';
-import '@fontsource/poppins/400.css';
-
+import '@fontsource-variable/montserrat';
 import { Header } from "./components/layout/header/Header";
 import { Footer } from "./components/layout/footer/Footer";
 

@@ -52,7 +52,7 @@ export const CardBlock: React.FC<CardBlockProps> = ({
           {iconClass && !isImageTop && (
             <i className={`${iconClass} text-3xl`} aria-hidden="true" />
           )}
-          <h2 className="text-lg font-semibold text-gray-900">{title}</h2>
+          <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
         </div>
 
         <p className="text-gray-700 leading-relaxed mb-4">{description}</p>

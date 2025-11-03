@@ -15,7 +15,7 @@ export const QuienesSomosPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl max-sm:text-3xl font-bold text-primary mb-4 tracking-tight">
+          className="text-4xl max-sm:text-3xl font-semibold text-primary mb-4 tracking-tight">
             Quiénes Somos
           </motion.h1>
           <motion.p 
@@ -31,7 +31,7 @@ export const QuienesSomosPage: React.FC = () => {
         <div className="space-y-20 ">
       
           <article className="bg-white p-6 rounded-2xl">
-            <h2 className="text-2xl font-bold mb-6 ">{quienesSomos.historia.title}</h2>
+            <h2 className="text-2xl font-semibold mb-6 ">{quienesSomos.historia.title}</h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               {quienesSomos.historia.items.map((item, i) => (
                 <p key={i}>
@@ -43,7 +43,7 @@ export const QuienesSomosPage: React.FC = () => {
 
   
           <section className="bg-white p-6 rounded-2xl">
-            <h2 className="text-2xl font-bold mb-8 ">Principios Cooperativos</h2>
+            <h2 className="text-2xl font-semibold mb-8 ">Principios Cooperativos</h2>
             <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-6">
               {quienesSomos.principios.map((item, i) => (
                 <div
@@ -62,7 +62,7 @@ export const QuienesSomosPage: React.FC = () => {
         <div className="space-y-20">
       
           <section className="bg-white p-6 rounded-2xl">
-            <h2 className="text-2xl font-bold mb-8 ">Nuestros Valores</h2>
+            <h2 className="text-2xl font-semibold mb-8 ">Nuestros Valores</h2>
             <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-6">
               {quienesSomos.valores.map((valor, i) => (
                 <div
