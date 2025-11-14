@@ -26,11 +26,11 @@ export const QuienesSomosPage: React.FC = () => {
             CELAM, una cooperativa con más de 70 años de compromiso con la comunidad.
           </motion.p>
         </div>
-      <div className="max-w-10/12 mx-auto max-sm:max-w-11/12  py-12 grid md:grid-cols-2 gap-16">
+      <div className="max-w-10/12 mx-auto max-xl:max-w-11/12  py-12 grid md:grid-cols-2 gap-16">
 
         <div className="space-y-20 ">
       
-          <article className="bg-white p-6 rounded-2xl">
+          <article className="bg-white sm:p-6 rounded-2xl">
             <h2 className="text-2xl font-semibold mb-6 ">{quienesSomos.historia.title}</h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               {quienesSomos.historia.items.map((item, i) => (
@@ -42,7 +42,7 @@ export const QuienesSomosPage: React.FC = () => {
           </article>
 
   
-          <section className="bg-white p-6 rounded-2xl">
+          <section className="bg-white sm:p-6 rounded-2xl">
             <h2 className="text-2xl font-semibold mb-8 ">Principios Cooperativos</h2>
             <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-6">
               {quienesSomos.principios.map((item, i) => (
@@ -61,7 +61,7 @@ export const QuienesSomosPage: React.FC = () => {
      
         <div className="space-y-20">
       
-          <section className="bg-white p-6 rounded-2xl">
+          <section className="bg-white sm:p-6 rounded-2xl">
             <h2 className="text-2xl font-semibold mb-8 ">Nuestros Valores</h2>
             <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-6">
               {quienesSomos.valores.map((valor, i) => (

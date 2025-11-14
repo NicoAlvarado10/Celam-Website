@@ -12,17 +12,22 @@ export default function AccesosPrincipales() {
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, ease: "easeOut", delay: 0 }}
-    className="text-4xl max-sm:text-3xl font-semibold text-center  mb-4 uppercase"
+    className="text-4xl max-sm:text-3xl text-primary font-semibold tracking-tight text-center mb-2 uppercase"
   >
     ¿Qué necesitás hacer hoy?
   </motion.h2>
+  <motion.div 
+  initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: 0.1 }}
+  className="h-1 bg-secondary w-24 my-2  mx-auto"></motion.div>
 
   <motion.p
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
-    className="text-xl text-gray-800 text-center  mb-12"
+    className="text-xl text-black text-center  mb-12"
   >
     Accedé rápidamente a los trámites más esenciales.
   </motion.p>

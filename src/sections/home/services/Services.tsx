@@ -7,29 +7,35 @@ export const Services: React.FC = () => {
 
   return (
     <section className=" text-gray-900 py-20 " id="services">
-      <div className="max-w-10/12 max-sm:max-w-11/12 mx-auto">
+      <div className="max-w-10/12 max-xl:max-w-11/12 mx-auto">
         <div className="text-center mb-12">
           <motion.h2
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5,}}
-    className="text-4xl max-sm:text-3xl font-semibold"
+    className="text-4xl max-sm:text-3xl mb-2 text-primary tracking-tight font-semibold"
   >
     Nuestros Servicios
   </motion.h2>
+   <motion.div 
+   initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: 0.1 }}
+   className="h-1 bg-secondary w-24 my-2  mx-auto"></motion.div>
+
 
   <motion.p
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5,  delay: 0.2 }}
-    className="text-gray-600 text-xl mt-6"
+    className="text-black text-xl "
   >
     CELAM acompaña a la comunidad con soluciones esenciales, humanas y sostenibles.
   </motion.p>
 
         </div>
 
-      <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:px-4 justify-between gap-4">
+      <div className="grid grid-cols-4 max-xl:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 justify-between gap-4">
          {servicesContent.items.map((service, index) => (
     <CardBlock
       key={index}

@@ -5,7 +5,7 @@ export const MisionVisionPage: React.FC = () => {
   return (
     <section className="text-gray-900 bg-white">
       {/* HERO */}
-      <div className="relative bg-gray-50 h-[100vh] max-2xl:h-[140vh] max-md:h-full flex items-center flex-col justify-center gap-10 pt-30">
+      <div className="relative bg-gray-50 h-[125vh] max-2xl:h-[140vh] max-md:h-full flex items-center flex-col justify-center gap-10 pt-30">
         <div
           className="relative z-10 text-center px-6"
         >

@@ -3,7 +3,7 @@ import logo from "../../../assets/logo.png"
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-black/95 text-white pt-20 " id="contact">
-      <div className="max-w-10/12 max-sm:max-w-11/12 mx-auto max-lg:grid-cols-3 max-md:grid-cols-2 grid grid-cols-4 max-sm:grid-cols-1 gap-8  pb-20 ">
+      <div className="max-w-10/12 max-xl:max-w-11/12 mx-auto max-lg:grid-cols-3 max-md:grid-cols-2 grid grid-cols-4 max-sm:grid-cols-1 gap-8  pb-20 ">
         
         {/* Identidad */}
         <div className="flex flex-col gap-4">
