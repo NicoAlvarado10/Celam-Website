@@ -4,8 +4,8 @@ export const heroSlides = [
     subtitle: "Energía que se renueva",
     description:
       "Somos la Cooperativa de Electricidad, Obras y Servicios Públicos de Adelia María. Impulsamos el desarrollo local con energía, compromiso y visión comunitaria.",
-    ctaPrimary: { label: "Sobre CELAM", href: "#contacto" },
-    ctaSecondary: { label: "Servicios", href: "#servicos" },
+    ctaPrimary: { label: "Sobre CELAM", href: "#about" },
+    ctaSecondary: { label: "Servicios", href: "#services" },
     imageSrc: "/bg-hero.jpg",
     className:" w-full rounded-lg",
        styleSubtitle:"tracking-tight text-2xl md:text-4xl font-semibold text-primary max-md:text-center" // agregada la imagen

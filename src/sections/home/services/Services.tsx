@@ -43,7 +43,7 @@ export const Services: React.FC = () => {
       description={service.description}
       iconClass={service.iconClass}
       link={service.link}
-       delay={index * 0.3}
+       delay={index * 0.2}
        imageSrc={service.imageSrc}
        variant="imageTop"
     />

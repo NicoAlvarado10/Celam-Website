@@ -30,7 +30,7 @@ export const QuienesSomosPage: React.FC = () => {
 
         <div className="space-y-20 ">
       
-          <article className="bg-white sm:p-6 rounded-2xl">
+          <article className="bg-white sm:p-6 p-4 rounded-2xl">
             <h2 className="text-2xl font-semibold mb-6 ">{quienesSomos.historia.title}</h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               {quienesSomos.historia.items.map((item, i) => (
@@ -42,7 +42,7 @@ export const QuienesSomosPage: React.FC = () => {
           </article>
 
   
-          <section className="bg-white sm:p-6 rounded-2xl">
+          <section className="bg-white sm:p-6 p-4 rounded-2xl">
             <h2 className="text-2xl font-semibold mb-8 ">Principios Cooperativos</h2>
             <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-6">
               {quienesSomos.principios.map((item, i) => (
@@ -61,7 +61,7 @@ export const QuienesSomosPage: React.FC = () => {
      
         <div className="space-y-20">
       
-          <section className="bg-white sm:p-6 rounded-2xl">
+          <section className="bg-white sm:p-6 p-4 rounded-2xl">
             <h2 className="text-2xl font-semibold mb-8 ">Nuestros Valores</h2>
             <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-6">
               {quienesSomos.valores.map((valor, i) => (
