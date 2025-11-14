@@ -14,7 +14,7 @@ html {
 body,
 p,
 a {
-  font-family:  sans-serif;
+  font-family: sans-serif;
 }
 
 h1,
@@ -33,4 +33,44 @@ h3 {
   --color-primary: #0049AF;
   --color-primary-light:#3B82F6;
   --color-secondary:#FB5900;
+  --color-third:#1197fb;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.75);
+  width: 48px;
+  padding: 8px 5px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin: 5px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: var(--color-secondary); /* tu color "primary" */
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px){
+    .swiper-button-next,
+.swiper-button-prev {
+
+  width: 40px;
+
+  height: 40px;}
 }

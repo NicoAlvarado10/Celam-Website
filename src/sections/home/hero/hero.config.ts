@@ -17,7 +17,7 @@ export const heroSlides = [
     ctaPrimary: { label: "Imprimir Factura", href: "#proyectos" },
     imageSrc: "/factura.jpg", 
     className:" w-full  object-cover rounded-lg",
-    styleSubtitle:"text-4xl md:text-6xl font-semibold text-primary max-md:text-center"
+    styleSubtitle:"text-4xl md:text-6xl max-sm:text-3xl font-bold text-primary max-md:text-center"
   },
   {
     subtitle: "Formas de pago",
@@ -26,6 +26,6 @@ export const heroSlides = [
     ctaPrimary: { label: "Ver formas de pago", href: "#nosotros" },
     imageSrc: "/metodos-pago.png",
     className:" w-full 2xl:h-[350px]  rounded-lg",
-       styleSubtitle:"text-4xl md:text-6xl font-semibold text-primary max-md:text-center"
+       styleSubtitle:"text-4xl md:text-6xl max-sm:text-3xl font-bold text-primary max-md:text-center"
   },
 ];
