@@ -23,10 +23,10 @@ export default function Botton({
 
 
   const baseClasses =
-    "relative overflow-hidden inline-block px-4 py-2 shadow-md transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 group";
+    "relative overflow-hidden inline-block text-sm uppercase px-4 py-2 shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 group";
 
 const variantClasses = isPrimary
-  ? "bg-primary text-white focus:ring-primary"
+  ? "bg-third text-white focus:ring-primary"
   : isGradient
     ? "bg-gradient-to-r from-black/90 via-black/80 to-black/75 text-white focus:ring-neutral-700"
     : "border-2 border-primary text-primary focus:ring-primary hover:border-secondary hover:text-white";
