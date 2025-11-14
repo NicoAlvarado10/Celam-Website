@@ -26,25 +26,25 @@ export const Header: React.FC = () => {
   return (
     <header
       className={`fixed  top-0 left-0 w-full z-50 text-white transition backdrop-blur-md ${
-        scrolled ? " lg:bg-black/50 lg:backdrop-blur-sm" : "bg-transparent"
+        scrolled ? " lg:bg-black/50  lg:backdrop-blur-sm" : "bg-transparent"
       }`}
     >
       <TopBar onMenuToggle={() => setIsOpen(!isOpen)} />
 
       <nav className=" mx-auto flex justify-center gap-20  items-center lg:py-6 lg:px-0 relative max-lg:max-w-full bg-white text-black/90 ">
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex items-center gap-8 text-sm  relative font-semibold">
+        <ul className="hidden lg:flex items-center gap-6 text-base  relative font-semibold">
           {navItems.map((item) =>
             item.children ? (
               <li
                 key={item.key}
-                className="relative group"
+                className="relative group "
                 onMouseEnter={() => setOpenDropdown(item.key)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 <button
                   onClick={() => toggleDropdown(item.key)}
-                  className="flex items-center gap-1 cursor-pointer text-lg hover:text-primary text-black/90 font-semibold"
+                  className="flex items-center gap-1 cursor-pointer text-base font-semibold text-primary hover:text-third  uppercase "
                   aria-expanded={openDropdown === item.key}
                 >
                   {item.label} <i className="ri-arrow-down-s-line text-base" />
@@ -57,7 +57,7 @@ export const Header: React.FC = () => {
       animate={{ opacity: 1, y: 0, scaleY: 1 }}
       exit={{ opacity: 0, y: -10, scaleY: 0.95 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="absolute top-full left-0 mt-4 bg-white text-black py-6 px-6 shadow-xl text-sm grid grid-cols-2 gap-4 z-10 min-w-[600px] origin-top rounded-xl"
+      className="absolute top-full  left-0 mt-4 bg-white text-primary  py-6 px-6 shadow-xl text-sm grid grid-cols-2 gap-4 z-10 min-w-[600px] origin-top rounded-xl "
     >
       {item.children.map((subItem, index) => (
        <motion.li
@@ -69,15 +69,15 @@ export const Header: React.FC = () => {
   >
     <NavLink
       to={subItem.path}
-      className="flex items-start gap-3 hover:text-primary transition"
+      className="flex items-start gap-3  text-primary hover:text-third transition"
       onClick={() => setOpenDropdown(null)}
     >
-      <i className={`ri-${subItem.icon} text-2xl text-primary mt-1`} />
+      <i className={`ri-${subItem.icon} text-2xl text-primary font-normal mt-1`} />
       <div className="flex flex-col gap-1">
-        <span className="text-sm font-semibold leading-tight normal-case">
+        <span className="text-sm font-semibold  leading-tight tracking-tight  uppercase">
           {subItem.label}
         </span>
-        <span className="text-sm text-gray-600 font-medium">{subItem.description}</span>
+        <span className="text-sm text-gray-800 font-medium">{subItem.description}</span>
       </div>
     </NavLink>
   </motion.li>
@@ -88,8 +88,8 @@ export const Header: React.FC = () => {
                </AnimatePresence>
               </li>
             ) : (
-              <li key={item.path}>
-                <NavLink to={item.path} className="hover:text-primary text-lg">
+              <li key={item.path} >
+                <NavLink to={item.path} className="text-primary hover:text-third uppercase  ">
                   {item.label}
                 </NavLink>
               </li>
