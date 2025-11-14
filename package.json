@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fontsource-variable/montserrat": "^5.2.8",
     "@fontsource/inter": "^5.2.7",
     "@tailwindcss/vite": "^4.1.13",
     "framer-motion": "^12.23.13",
